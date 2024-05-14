@@ -16,8 +16,8 @@ function myButtonClicked() {
     if (remainder < secondinputNumber){
       break;
     }
-    remainder -= secondinputNumber;
-    counter++;
+    remainder -= secondinputNumber
+    counter+= 1
   }
 
   const answer = counter
