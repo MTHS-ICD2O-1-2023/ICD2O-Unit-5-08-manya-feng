@@ -6,26 +6,24 @@
 
 "use strict"
 
-let counter = 0
-let answer = 0
-let remainder = secondinputNumber
-
 function myButtonClicked() {
   const firstinputNumber = parseInt(document.getElementById("firstinputNumber").value)
   const secondinputNumber = parseInt(document.getElementById("secondinputNumber").value)
-  
+  let counter = 0
+  let remainder = firstinputNumber
+
   while (true) {
-    if (remainder < firstinputNumber){
+    if (remainder < secondinputNumber){
       break;
     }
-    remainder -= firstinputNumber;
+    remainder -= secondinputNumber;
     counter++;
   }
 
-  answer = counter
+  const answer = counter
   
   document.getElementById("answer").innerHTML =
-    firstinputNumber + " / " + secondinputNumber + " = " + answer + "R" + answera
+    firstinputNumber + " / " + secondinputNumber + " = " + answer + "R" + remainder
   }
 
 
